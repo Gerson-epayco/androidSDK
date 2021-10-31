@@ -6,6 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
+    <EditText
+        android:id="@+id/EditTextName"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="@string/feedbackname"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp"></EditText>
+
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/feedbackemail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextName"
+        tools:layout_editor_absoluteX="1dp"></EditText>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:hint="@string/feedbackemail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toTopOf="@+id/EditTextEmail"
+        tools:layout_editor_absoluteX="1dp"></EditText>
+
+    <Button
+        android:id="@+id/ButtonSendFeedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="sendFeedback"
+        android:text="@string/feedbackbutton"
+        app:layout_constraintTop_toTopOf="@+id/editTextEmail"
+        tools:layout_editor_absoluteX="8dp"></Button>
+
     <TextView
         android:id="@+id/text_slideshow"
         android:layout_width="match_parent"

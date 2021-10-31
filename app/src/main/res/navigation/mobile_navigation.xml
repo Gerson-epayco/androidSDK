@@ -10,6 +10,11 @@
         android:name="com.example.epaycosdk.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/customer_list"
+        android:name="com.example.epaycosdk.ui.CustomerListFragment"
+        android:label="@string/customer_list"
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
