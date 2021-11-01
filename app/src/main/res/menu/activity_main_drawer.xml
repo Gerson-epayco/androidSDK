@@ -17,6 +17,10 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/plans_list" />
         <item
+            android:id="@+id/subscriptions_list"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/subscriptions_list" />
+        <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_gallery" />
