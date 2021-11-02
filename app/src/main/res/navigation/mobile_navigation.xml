@@ -67,6 +67,16 @@
         android:label="@string/subscriptions_create"
         tools:layout="@layout/create_subscription_fragment" />
     <fragment
+        android:id="@+id/subscriptions_detail"
+        android:name="com.example.epaycosdk.ui.subscriptions.DetailSubscription"
+        android:label="@string/subscriptions_detail"
+        tools:layout="@layout/detail_subscription_fragment" />
+    <fragment
+        android:id="@+id/subscriptions_pay"
+        android:name="com.example.epaycosdk.ui.subscriptions.PaySubscription"
+        android:label="@string/subscriptions_pay"
+        tools:layout="@layout/pay_subscription_fragment" />
+    <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.epaycosdk.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"

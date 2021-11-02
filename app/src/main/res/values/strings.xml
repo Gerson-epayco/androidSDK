@@ -135,4 +135,8 @@
     <string name="docType">docType</string>
     <string name="docNumber">docNumber</string>
     <string name="urlConfirmation">URL confirmation</string>
+    <string name="subscriptionsId">Subscription ID</string>
+    <string name="subscriptions_detail">Subscription Detail</string>
+    <string name="subscriptions_pay">Pay Subscription</string>
+    <string name="ip">IP</string>
 </resources>

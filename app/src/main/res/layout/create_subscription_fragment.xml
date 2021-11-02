@@ -29,7 +29,7 @@ tools:context=".ui.subscriptions.CreateSubscription">
             android:layout_marginTop="60dp"
             android:hint="@string/customerId"
             android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="EditTextTokenId"
+            app:layout_constraintTop_toTopOf="@+id/EditTextTokenId"
             tools:layout_editor_absoluteX="1dp" />
 
         <EditText
@@ -39,7 +39,7 @@ tools:context=".ui.subscriptions.CreateSubscription">
             android:layout_marginTop="60dp"
             android:hint="@string/planId"
             android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="EditTextCustomerId"
+            app:layout_constraintTop_toTopOf="@+id/EditTextCustomerId"
             tools:layout_editor_absoluteX="1dp" />
 
         <EditText
@@ -49,7 +49,7 @@ tools:context=".ui.subscriptions.CreateSubscription">
             android:layout_marginTop="60dp"
             android:hint="@string/docType"
             android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/EditTextIdPlan"
             tools:layout_editor_absoluteX="1dp" />
 
         <EditText
@@ -59,7 +59,7 @@ tools:context=".ui.subscriptions.CreateSubscription">
             android:layout_marginTop="60dp"
             android:hint="@string/docNumber"
             android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="EditTextDocType"
+            app:layout_constraintTop_toTopOf="@+id/EditTextDocType"
             tools:layout_editor_absoluteX="1dp" />
 
         <EditText
@@ -69,7 +69,7 @@ tools:context=".ui.subscriptions.CreateSubscription">
             android:layout_marginTop="60dp"
             android:hint="@string/urlConfirmation"
             android:inputType="textPersonName"
-            app:layout_constraintTop_toTopOf="EditTextDocNumber"
+            app:layout_constraintTop_toTopOf="@+id/EditTextDocNumber"
             tools:layout_editor_absoluteX="1dp" />
 
         <Button
