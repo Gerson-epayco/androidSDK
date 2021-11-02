@@ -5,19 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import co.epayco.android.Epayco
 import co.epayco.android.models.Authentication
 import co.epayco.android.util.EpaycoCallback
-import com.example.epaycosdk.R
+import com.example.epaycosdk.PrincipalFragment
 import com.example.epaycosdk.databinding.FragmentHomeBinding
 import org.json.JSONException
 import org.json.JSONObject
 import java.lang.Exception
 
-class HomeFragment : Fragment() {
+class HomeFragment : PrincipalFragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
@@ -37,7 +36,7 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val auth = autentication()
+
         val epayco = Epayco(auth)
 
         epayco.getBanks(object : EpaycoCallback {
@@ -60,16 +59,6 @@ class HomeFragment : Fragment() {
             textView.text = it
         })
         return root
-    }
-
-    private fun autentication(): Authentication {
-        val auth = Authentication()
-
-        auth.setApiKey("32c8ef12cc65878db1ccff30cdaf8e49")
-        auth.setPrivateKey("d84e9885d4f7de545e09736e9c5beb61")
-        auth.setLang("ES")
-        auth.setTest(true)
-        return auth
     }
 
     override fun onDestroyView() {

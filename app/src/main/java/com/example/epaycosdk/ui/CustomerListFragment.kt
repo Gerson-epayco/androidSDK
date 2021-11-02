@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import co.epayco.android.Epayco
 import co.epayco.android.models.Authentication
 import co.epayco.android.util.EpaycoCallback
+import com.example.epaycosdk.PrincipalFragment
 import com.example.epaycosdk.R
 import org.json.JSONException
 import org.json.JSONObject
@@ -29,7 +30,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [CustomerListFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class CustomerListFragment : Fragment() {
+class CustomerListFragment : PrincipalFragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
@@ -41,7 +42,7 @@ class CustomerListFragment : Fragment() {
     ): View? {
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
-        val auth = autentication()
+
         val epayco = Epayco(auth)
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -65,16 +66,6 @@ class CustomerListFragment : Fragment() {
             textView.text = it
         })
         return root
-    }
-
-    private fun autentication(): Authentication {
-        val auth = Authentication()
-
-        auth.setApiKey("32c8ef12cc65878db1ccff30cdaf8e49")
-        auth.setPrivateKey("d84e9885d4f7de545e09736e9c5beb61")
-        auth.setLang("ES")
-        auth.setTest(true)
-        return auth
     }
 
     companion object {

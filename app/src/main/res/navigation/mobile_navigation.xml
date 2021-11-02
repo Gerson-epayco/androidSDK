@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_gallery">
 
     <fragment
         android:id="@+id/nav_home"
@@ -14,13 +14,43 @@
         android:id="@+id/customer_list"
         android:name="com.example.epaycosdk.ui.CustomerListFragment"
         android:label="@string/customer_list"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_customer_list" />
+    <fragment
+        android:id="@+id/customer_create"
+        android:name="com.example.epaycosdk.ui.customer.CreateCustomerFragment"
+        android:label="@string/customer_create"
+        tools:layout="@layout/fragment_create_customer" />
+    <fragment
+        android:id="@+id/customer_detail"
+        android:name="com.example.epaycosdk.ui.customer.CustomerDetailFragment"
+        android:label="@string/customer_detail"
+        tools:layout="@layout/customer_detail_fragment" />
+    <fragment
+        android:id="@+id/customer_delete_token"
+        android:name="com.example.epaycosdk.ui.customer.DeleteTokenFragment"
+        android:label="@string/customer_delete_token"
+        tools:layout="@layout/delete_token_fragment" />
+    <fragment
+        android:id="@+id/customer_add_token_default_token"
+        android:name="com.example.epaycosdk.ui.customer.AddNewDefaultTokenkFragment"
+        android:label="@string/customer_add_token_Default"
+        tools:layout="@layout/add_new_default_tokenk_fragment" />
+    <fragment
+        android:id="@+id/customer_add_token_default"
+        android:name="com.example.epaycosdk.ui.customer.AddNewToken"
+        android:label="@string/customer_add_token"
+        tools:layout="@layout/add_new_token_fragment" />
     <fragment
         android:id="@+id/plans_list"
         android:name="com.example.epaycosdk.ui.PlanListFragment"
         android:label="@string/plans_list"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_plan_list" />
 
+    <fragment
+        android:id="@+id/subscriptions_list"
+        android:name="com.example.epaycosdk.ui.SubscriptionListFragment"
+        android:label="@string/subscriptions_list"
+        tools:layout="@layout/fragment_subscription_list" />
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.epaycosdk.ui.gallery.GalleryFragment"

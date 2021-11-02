@@ -9,7 +9,7 @@
 
     <string name="menu_home">Listar Bancos</string>
     <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_slideshow">Tokenizar</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -99,13 +99,27 @@
         "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
         "when a user tries to pick up one of cards.\n\n"
     </string>
-    <string name="feedbacktitle">Input uno</string>
-    <string name="feedbackname">Campo uno</string>
-    <string name="feedbackemail">Campo email</string>
-    <string name="feedbackbutton" />
     <string name="customer_list">Customer list</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="plans_list">Plans list</string>
     <string name="subscriptions_list">Subscription list</string>
+    <string name="number">Number</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="cvc">CVC</string>
+    <string name="enviar">Enviar</string>
+    <string name="customer_create">Create customer</string>
+    <string name="TokenId">TokenID</string>
+    <string name="Name">Name</string>
+    <string name="defaul_card">Default card</string>
+    <string name="email">email</string>
+    <string name="phone">phone</string>
+    <string name="customerId">Customer ID</string>
+    <string name="customer_detail">Customer detail</string>
+    <string name="customer_delete_token">Delete token Customer</string>
+    <string name="customer_add_token_Default">"Add Token Default "</string>
+    <string name="franchise">franchise</string>
+    <string name="mask">mask</string>
+    <string name="customer_add_token">Add new Token to Customer</string>
 </resources>

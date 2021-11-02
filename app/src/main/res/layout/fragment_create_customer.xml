@@ -1,50 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    tools:context=".ui.customer.CreateCustomerFragment">
+
 
     <EditText
-        android:id="@+id/EditTextNumber"
+        android:id="@+id/EditTextTokenId"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:hint="@string/number"
-        android:inputType="textPersonName"
+        android:hint="@string/TokenId"
+        android:inputType="text"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="1dp" />
 
     <EditText
-        android:id="@+id/EditTextMonth"
+        android:id="@+id/EditTextName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:hint="@string/month"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextNumber"
-        tools:layout_editor_absoluteX="1dp"/>
+        android:hint="@string/Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextTokenId"
+        tools:layout_editor_absoluteX="1dp" />
 
     <EditText
-        android:id="@+id/EditTextYear"
+        android:id="@+id/EditTextEmail"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/year"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextMonth"
-        tools:layout_editor_absoluteX="1dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/EditTextName"
+        tools:layout_editor_absoluteX="1dp" />
 
     <EditText
-        android:id="@+id/EditTextCVC"
+        android:id="@+id/EditTextPhone"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="@string/cvc"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextYear"
-        tools:layout_editor_absoluteX="0dp"/>
+        android:hint="@string/phone"
+        android:inputType="textPhonetic"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextEmail"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/EditTextDefault"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="@string/defaul_card"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextPhone"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/ButtonSendFeedback"
@@ -53,23 +65,22 @@
         android:layout_marginTop="24dp"
         android:onClick="sendFeedback"
         android:text="@string/enviar"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextCVC"
-        tools:layout_editor_absoluteX="8dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/EditTextDefault"
+        tools:layout_editor_absoluteX="8dp" />
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="388dp"
-        android:layout_height="51dp"
+        android:layout_width="406dp"
+        android:layout_height="267dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="134dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ButtonSendFeedback"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

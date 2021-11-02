@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModelProvider
 import co.epayco.android.Epayco
 import co.epayco.android.models.Authentication
 import co.epayco.android.util.EpaycoCallback
+import com.example.epaycosdk.PrincipalFragment
 import com.example.epaycosdk.R
 import com.example.epaycosdk.databinding.FragmentHomeBinding
 import com.example.epaycosdk.ui.home.HomeViewModel
@@ -28,7 +29,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [SubscriptionListFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class SubscriptionListFragment : Fragment() {
+class SubscriptionListFragment : PrincipalFragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
@@ -48,7 +49,6 @@ class SubscriptionListFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val auth = autentication()
         val epayco = Epayco(auth)
 
         epayco.getSubscriptionList(object : EpaycoCallback {
@@ -71,16 +71,6 @@ class SubscriptionListFragment : Fragment() {
             textView.text = it
         })
         return root
-    }
-
-    private fun autentication(): Authentication {
-        val auth = Authentication()
-
-        auth.setApiKey("32c8ef12cc65878db1ccff30cdaf8e49")
-        auth.setPrivateKey("d84e9885d4f7de545e09736e9c5beb61")
-        auth.setLang("ES")
-        auth.setTest(true)
-        return auth
     }
 
     override fun onDestroyView() {

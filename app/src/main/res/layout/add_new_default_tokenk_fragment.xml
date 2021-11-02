@@ -4,46 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    tools:context=".ui.customer.AddNewDefaultTokenkFragment">
 
     <EditText
-        android:id="@+id/EditTextNumber"
+        android:id="@+id/EditTextCustomerId"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:hint="@string/number"
+        android:hint="@string/customerId"
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="1dp" />
 
     <EditText
-        android:id="@+id/EditTextMonth"
+        android:id="@+id/EditTextTokenId"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:hint="@string/month"
+        android:hint="@string/TokenId"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextCustomerId"
         tools:layout_editor_absoluteX="1dp"/>
 
     <EditText
-        android:id="@+id/EditTextYear"
+        android:id="@+id/EditTextFranchise"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/year"
+        android:hint="@string/franchise"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextMonth"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextTokenId"
         tools:layout_editor_absoluteX="1dp"/>
 
     <EditText
-        android:id="@+id/EditTextCVC"
+        android:id="@+id/EditTextMask"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="@string/cvc"
+        android:hint="@string/mask"
         android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextYear"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextFranchise"
         tools:layout_editor_absoluteX="0dp"/>
 
     <Button
@@ -53,15 +53,14 @@
         android:layout_marginTop="24dp"
         android:onClick="sendFeedback"
         android:text="@string/enviar"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextCVC"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextMask"
         tools:layout_editor_absoluteX="8dp"/>
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="388dp"
-        android:layout_height="51dp"
+        android:layout_width="397dp"
+        android:layout_height="356dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="134dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:textSize="20sp"

@@ -14,9 +14,19 @@ import android.widget.Button
 
 import android.widget.EditText
 import android.widget.Toast
+import co.epayco.android.Epayco
+import co.epayco.android.models.Authentication
+import co.epayco.android.models.Card
+import org.json.JSONException
+
+import org.json.JSONObject
+
+import co.epayco.android.util.EpaycoCallback
+import com.example.epaycosdk.PrincipalFragment
+import java.lang.Exception
 
 
-class SlideshowFragment : Fragment() {
+class SlideshowFragment : PrincipalFragment() {
 
     private lateinit var slideshowViewModel: SlideshowViewModel
     private var _binding: FragmentSlideshowBinding? = null
@@ -32,11 +42,13 @@ class SlideshowFragment : Fragment() {
     ): View? {
         slideshowViewModel =
             ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        val epayco = Epayco(auth)
+        val card = Card()
 
         _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
+        val textView: TextView = binding.result
         slideshowViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
@@ -45,23 +57,40 @@ class SlideshowFragment : Fragment() {
 
         btn_submit.setOnClickListener {
 
-            val nameField = binding.EditTextName as EditText
-            val name = nameField.text.toString()
-
-            val emailField = binding.EditTextEmail as EditText
-            val email = emailField.text.toString()
-
-
             System.out.println("click")
-            System.out.println(email)
-            System.out.println(nameField)
+            val numberField = binding.EditTextNumber as EditText
+            val number = numberField.text.toString()
+
+            val monthField = binding.EditTextMonth as EditText
+            val month = monthField.text.toString()
+
+            val yearField = binding.EditTextYear as EditText
+            val year = yearField.text.toString()
+
+            val cvcField = binding.EditTextCVC as EditText
+            val cvc = cvcField.text.toString()
+
+            card.setNumber(number)
+            card.setMonth(month)
+            card.setYear(year)
+            card.setCvc(cvc)
+
+            epayco.createToken(card, object : EpaycoCallback {
+                @Throws(JSONException::class)
+                override fun onSuccess(data: JSONObject) {
+
+                    val textView: TextView = binding.result
+                    textView.text = data.toString()
+
+                    System.out.println("onSuccess")
+
+                }
+
+                override fun onError(error: Exception) {}
+            })
         }
 
         return root
-    }
-
-    fun sendFeedback(button: View?) {
-        // Do click handling here
     }
 
     override fun onDestroyView() {
