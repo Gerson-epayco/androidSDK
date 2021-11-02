@@ -122,4 +122,17 @@
     <string name="franchise">franchise</string>
     <string name="mask">mask</string>
     <string name="customer_add_token">Add new Token to Customer</string>
+    <string name="plans_create">Create plan</string>
+    <string name="planId">plan ID</string>
+    <string name="description">description</string>
+    <string name="Amount">Amount</string>
+    <string name="Currency">Currency</string>
+    <string name="Interval">Interval</string>
+    <string name="IntervalCount">Interval Count</string>
+    <string name="TrialDays">Trial Days</string>
+    <string name="plans_detail">Detail Plan</string>
+    <string name="subscriptions_create">Create Subscription</string>
+    <string name="docType">docType</string>
+    <string name="docNumber">docNumber</string>
+    <string name="urlConfirmation">URL confirmation</string>
 </resources>

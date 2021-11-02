@@ -41,6 +41,16 @@
         android:label="@string/customer_add_token"
         tools:layout="@layout/add_new_token_fragment" />
     <fragment
+        android:id="@+id/plans_create"
+        android:name="com.example.epaycosdk.ui.plans.CreatePlan"
+        android:label="@string/plans_create"
+        tools:layout="@layout/create_plan_fragment" />
+    <fragment
+        android:id="@+id/plans_detail"
+        android:name="com.example.epaycosdk.ui.plans.PlanDetail"
+        android:label="@string/plans_create"
+        tools:layout="@layout/plan_detail_fragment" />
+    <fragment
         android:id="@+id/plans_list"
         android:name="com.example.epaycosdk.ui.PlanListFragment"
         android:label="@string/plans_list"
@@ -51,6 +61,11 @@
         android:name="com.example.epaycosdk.ui.SubscriptionListFragment"
         android:label="@string/subscriptions_list"
         tools:layout="@layout/fragment_subscription_list" />
+    <fragment
+        android:id="@+id/subscriptions_create"
+        android:name="com.example.epaycosdk.ui.subscriptions.CreateSubscription"
+        android:label="@string/subscriptions_create"
+        tools:layout="@layout/create_subscription_fragment" />
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.epaycosdk.ui.gallery.GalleryFragment"

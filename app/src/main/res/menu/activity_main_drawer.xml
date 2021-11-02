@@ -33,6 +33,14 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/customer_add_token" />
         <item
+            android:id="@+id/plans_create"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/plans_create" />
+        <item
+            android:id="@+id/plans_detail"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/plans_detail" />
+        <item
             android:id="@+id/plans_list"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/plans_list" />
@@ -40,6 +48,10 @@
             android:id="@+id/subscriptions_list"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/subscriptions_list" />
+        <item
+            android:id="@+id/subscriptions_create"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/subscriptions_create" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
