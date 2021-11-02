@@ -25,9 +25,6 @@ import co.epayco.android.models.ChargeSub
 
 
 class PaySubscription : PrincipalFragment() {
-
-
-
     private lateinit var viewModel: PaySubscriptionViewModel
     private var _binding: PaySubscriptionFragmentBinding? = null
 

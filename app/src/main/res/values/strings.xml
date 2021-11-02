@@ -139,4 +139,17 @@
     <string name="subscriptions_detail">Subscription Detail</string>
     <string name="subscriptions_pay">Pay Subscription</string>
     <string name="ip">IP</string>
+    <string name="bank">Bank</string>
+    <string name="typePerson">TypePerson</string>
+    <string name="LastName">LastName</string>
+    <string name="invoice">Invoice</string>
+    <string name="value">Value</string>
+    <string name="tax">Tax</string>
+    <string name="taxBase">Tax Base</string>
+    <string name="country">Country</string>
+    <string name="urlResponse">URL response</string>
+    <string name="extra">extra</string>
+    <string name="city">city</string>
+    <string name="depto">Depto</string>
+    <string name="address">Address</string>
 </resources>
