@@ -50,4 +50,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation "com.github.epayco:epayco-android:3d80357"
+    implementation "com.android.support:desing:31.0.0"
 }
