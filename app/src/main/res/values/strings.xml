@@ -161,4 +161,9 @@
     <string name="split_type">split type</string>
     <string name="split_primary_receiver">split primary receiver</string>
     <string name="split_primary_receiver_fee">split primary receiver fee</string>
+    <string name="cash_create">Create TRX Cash</string>
+    <string name="type">type</string>
+    <string name="endDate">End Date</string>
+    <string name="cash_detail">Detail TRX Cash</string>
+    <string name="dues">dues</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.epaycosdk.ui.pse
+package com.example.epaycosdk.ui.cash
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -11,19 +11,21 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.lifecycle.Observer
 import co.epayco.android.Epayco
-import co.epayco.android.models.ChargeSub
-import co.epayco.android.models.Subscription
 import co.epayco.android.util.EpaycoCallback
 import com.example.epaycosdk.PrincipalFragment
-import com.example.epaycosdk.databinding.CreatePseFragmentBinding
+import com.example.epaycosdk.databinding.CreateCashFragmentBinding
 import org.json.JSONException
 import org.json.JSONObject
 import java.lang.Exception
-import co.epayco.android.models.Pse
+import co.epayco.android.models.Cash
 
-class CreatePse : PrincipalFragment() {
-    private lateinit var viewModel: CreatePseViewModel
-    private var _binding: CreatePseFragmentBinding? = null
+
+
+
+class CreateCash : PrincipalFragment() {
+
+    private lateinit var viewModel: CreateCashViewModel
+    private var _binding: CreateCashFragmentBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -35,10 +37,10 @@ class CreatePse : PrincipalFragment() {
         savedInstanceState: Bundle?
     ): View? {
         viewModel =
-            ViewModelProvider(this).get(CreatePseViewModel::class.java)
+            ViewModelProvider(this).get(CreateCashViewModel::class.java)
         val epayco = Epayco(auth)
 
-        _binding = CreatePseFragmentBinding.inflate(inflater, container, false)
+        _binding = CreateCashFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.result
@@ -50,11 +52,11 @@ class CreatePse : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val bankField = binding.EditTextBank as EditText
-            val bank = bankField.text.toString()
+            val typeField = binding.EditTextType as EditText
+            val type = typeField.text.toString()
 
-            val typePersonField = binding.EditTextTypePerson as EditText
-            val typePerson = typePersonField.text.toString()
+            val endDateField = binding.EditTextEndDate as EditText
+            val endDate = endDateField.text.toString()
 
             val docTypeField = binding.EditTextDocType as EditText
             val docType = docTypeField.text.toString()
@@ -140,40 +142,41 @@ class CreatePse : PrincipalFragment() {
             val split_primary_receiver_feeField = binding.EditTextSplitPrimaryReceiverFee as EditText
             val split_primary_receiver_fee = split_primary_receiver_feeField.text.toString()
 
-            val pse = Pse()
-            pse.bank = bank
-            pse.typePerson = typePerson
-            pse.docType = docType
-            pse.docNumber = docNumber
-            pse.name = name
-            pse.lastName = lastName
-            pse.email = email
-            pse.invoice = invoice
-            pse.description = description
-            pse.value = value
-            pse.tax = tax
-            pse.taxBase = taxBase
-            pse.phone = phone
-            pse.currency = currency
-            pse.country = country
-            pse.urlResponse = urlResponse
-            pse.urlConfirmation = urlConfirmation
-            pse.ip = ip
-            pse.extra1 = extra1
-            pse.extra2 = extra2
-            pse.extra3 = extra3
-            pse.city = city
-            pse.depto = depto
-            pse.address = address
+            val cash = Cash()
 
-            pse.splitpayment = splitpayment
-            pse.split_app_id = split_app_id
-            pse.split_merchant_id = split_merchant_id
-            pse.split_type = split_type
-            pse.split_primary_receiver=  split_primary_receiver
-            pse.split_primary_receiver_fee = split_primary_receiver_fee
+            cash.type = type
+            cash.endDate = endDate
+            cash.docType = docType
+            cash.docNumber = docNumber
+            cash.name = name
+            cash.lastName = lastName
+            cash.email = email
+            cash.invoice = invoice
+            cash.description = description
+            cash.value = value
+            cash.tax = tax
+            cash.taxBase = taxBase
+            cash.phone = phone
+            cash.currency = currency
+            cash.ip = ip
+            cash.urlResponse = urlResponse
+            cash.urlConfirmation = urlConfirmation
+            cash.extra1 = extra1
+            cash.extra2 = extra2
+            cash.extra3 = extra3
+            cash.country = country
+            cash.city = city
+            cash.depto = depto
+            cash.address = address
+            cash.splitpayment = splitpayment
+            cash.split_app_id = split_app_id
+            cash.split_merchant_id = split_merchant_id
+            cash.split_type = split_type
+            cash.split_primary_receiver=  split_primary_receiver
+            cash.split_primary_receiver_fee = split_primary_receiver_fee
 
-            epayco.createPseTransaction(pse, object : EpaycoCallback {
+
+            epayco.createCashTransaction(cash, object : EpaycoCallback {
                 @Throws(JSONException::class)
                 override fun onSuccess(data: JSONObject) {
 
@@ -195,5 +198,4 @@ class CreatePse : PrincipalFragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

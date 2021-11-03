@@ -73,6 +73,15 @@
             android:title="@string/pse_detail" />
 
         <item
+            android:id="@+id/cash_create"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/cash_create" />
+        <item
+            android:id="@+id/cash_detail"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/cash_detail" />
+
+        <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_gallery" />

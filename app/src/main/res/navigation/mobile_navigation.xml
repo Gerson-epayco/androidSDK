@@ -86,6 +86,19 @@
         android:name="com.example.epaycosdk.ui.pse.DetailPse"
         android:label="@string/pse_detail"
         tools:layout="@layout/detail_pse_fragment" />
+
+    <fragment
+        android:id="@+id/cash_create"
+        android:name="com.example.epaycosdk.ui.cash.CreateCash"
+        android:label="@string/cash_create"
+        tools:layout="@layout/create_cash_fragment" />
+
+    <fragment
+        android:id="@+id/cash_detail"
+        android:name="com.example.epaycosdk.ui.cash.DetailsCash"
+        android:label="@string/cash_detail"
+        tools:layout="@layout/details_cash_fragment" />
+
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.epaycosdk.ui.gallery.GalleryFragment"

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.subscriptions.Payment">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/EditTextTokenId"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/TokenId"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextCustomerId"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/customerId"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextTokenId"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextDocType"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/docType"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextCustomerId"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextDocNumber"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/docNumber"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextDocType"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextName"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/Name"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextTypePerson"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextLastName"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/LastName"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextName"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextEmail"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/email"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextLastName"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextInvoice"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/invoice"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextEmail"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextDescription"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/description"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextInvoice"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextValue"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/value"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextDescription"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextTax"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/tax"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextValue"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextTaxBase"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/taxBase"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextTax"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextDues"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/dues"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextTaxBase"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextDefaultCard"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/defaul_card"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextDues"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextCurrency"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/Currency"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextDefaultCard"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextCountry"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/country"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextCurrency"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextUrlResponse"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/urlResponse"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextCountry"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextUrlConfirmation"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/urlConfirmation"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextUrlResponse"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextExtra1"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/extra"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextUrlConfirmation"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextExtra2"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/extra"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextExtra1"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextExtra3"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/extra"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextExtra2"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextCity"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/city"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextExtra3"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextDepto"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/depto"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextCity"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextAddress"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/address"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextDepto"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextIP"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/ip"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextAddress"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitpayment"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/splitpayment"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextIP"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextAddressSplitAppId"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_app_id"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitpayment"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitMerchantId"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_merchant_id"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextAddressSplitAppId"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitType"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_type"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitMerchantId"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitPrimaryReceiver"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_primary_receiver"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitType"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitPrimaryReceiverFee"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_primary_receiver_fee"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitPrimaryReceiver"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <Button
+                    android:id="@+id/ButtonSendFeedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:onClick="sendFeedback"
+                    android:text="@string/enviar"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextSplitPrimaryReceiverFee"
+                    tools:layout_editor_absoluteX="8dp"/>
+
+
+                <TextView
+                    android:id="@+id/result"
+                    android:layout_width="397dp"
+                    android:layout_height="356dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ButtonSendFeedback"
+                    app:layout_constraintVertical_bias="0.0" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
