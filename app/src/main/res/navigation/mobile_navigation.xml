@@ -77,6 +77,16 @@
         android:label="@string/subscriptions_pay"
         tools:layout="@layout/pay_subscription_fragment" />
     <fragment
+        android:id="@+id/pse_create"
+        android:name="com.example.epaycosdk.ui.pse.CreatePse"
+        android:label="@string/pse_create"
+        tools:layout="@layout/create_pse_fragment" />
+    <fragment
+        android:id="@+id/pse_detail"
+        android:name="com.example.epaycosdk.ui.pse.DetailPse"
+        android:label="@string/pse_detail"
+        tools:layout="@layout/detail_pse_fragment" />
+    <fragment
         android:id="@+id/nav_gallery"
         android:name="com.example.epaycosdk.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"

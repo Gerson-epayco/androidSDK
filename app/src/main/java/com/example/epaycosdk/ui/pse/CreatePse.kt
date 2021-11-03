@@ -128,6 +128,24 @@ class CreatePse : PrincipalFragment() {
             val addressField = binding.EditTextAddress as EditText
             val address = addressField.text.toString()
 
+            val splitpaymentField = binding.EditTextSplitpayment as EditText
+            val splitpayment = splitpaymentField.text.toString()
+
+            val split_app_idField = binding.EditTextAddressSplitAppId as EditText
+            val split_app_id = split_app_idField.text.toString()
+
+            val split_merchant_idField = binding.EditTextSplitMerchantId as EditText
+            val split_merchant_id = split_merchant_idField.text.toString()
+
+            val split_typeField = binding.EditTextSplitType as EditText
+            val split_type = split_typeField.text.toString()
+
+            val split_primary_receiversField = binding.EditTextSplitPrimaryReceiver as EditText
+            val split_primary_receiver = split_primary_receiversField.text.toString()
+
+            val split_primary_receiver_feeField = binding.EditTextSplitPrimaryReceiverFee as EditText
+            val split_primary_receiver_fee = split_primary_receiver_feeField.text.toString()
+
             val pse = Pse()
             pse.bank = bank
             pse.typePerson = typePerson
@@ -153,6 +171,13 @@ class CreatePse : PrincipalFragment() {
             pse.city = city
             pse.depto = depto
             pse.address = address
+
+            pse.splitpayment = splitpayment
+            pse.split_app_id = split_app_id
+            pse.split_merchant_id = split_merchant_id
+            pse.split_type = split_type
+            pse.split_primary_receiver=  split_primary_receiver
+            pse.split_primary_receiver_fee = split_primary_receiver_fee
 
             epayco.createPseTransaction(pse, object : EpaycoCallback {
                 @Throws(JSONException::class)

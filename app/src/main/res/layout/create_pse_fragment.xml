@@ -252,6 +252,66 @@
                     app:layout_constraintTop_toTopOf="@+id/EditTextAddress"
                     tools:layout_editor_absoluteX="1dp" />
 
+                <EditText
+                    android:id="@+id/EditTextSplitpayment"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/splitpayment"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextIP"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextAddressSplitAppId"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_app_id"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitpayment"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitMerchantId"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_merchant_id"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextAddressSplitAppId"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitType"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_type"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitMerchantId"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitPrimaryReceiver"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_primary_receiver"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitType"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
+                    android:id="@+id/EditTextSplitPrimaryReceiverFee"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/split_primary_receiver_fee"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextSplitPrimaryReceiver"
+                    tools:layout_editor_absoluteX="1dp" />
+
                 <Button
                     android:id="@+id/ButtonSendFeedback"
                     android:layout_width="fill_parent"
@@ -259,7 +319,7 @@
                     android:layout_marginTop="24dp"
                     android:onClick="sendFeedback"
                     android:text="@string/enviar"
-                    app:layout_constraintTop_toBottomOf="@+id/EditTextIP"
+                    app:layout_constraintTop_toBottomOf="@+id/EditTextSplitPrimaryReceiverFee"
                     tools:layout_editor_absoluteX="8dp"/>
 
 

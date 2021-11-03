@@ -152,4 +152,13 @@
     <string name="city">city</string>
     <string name="depto">Depto</string>
     <string name="address">Address</string>
+    <string name="refPayco">ref_payco</string>
+    <string name="pse_create">Create trx PSE</string>
+    <string name="pse_detail">Detail TRX PSE</string>
+    <string name="splitpayment">splitpayment</string>
+    <string name="split_app_id">split app id</string>
+    <string name="split_merchant_id">split merchant id</string>
+    <string name="split_type">split type</string>
+    <string name="split_primary_receiver">split primary receiver</string>
+    <string name="split_primary_receiver_fee">split primary receiver fee</string>
 </resources>

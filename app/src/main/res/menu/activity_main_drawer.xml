@@ -63,6 +63,16 @@
             android:title="@string/subscriptions_pay" />
 
         <item
+            android:id="@+id/pse_create"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/pse_create" />
+
+        <item
+            android:id="@+id/pse_detail"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/pse_detail" />
+
+        <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/menu_gallery" />
