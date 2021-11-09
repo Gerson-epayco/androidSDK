@@ -89,6 +89,9 @@ class CreatePse : PrincipalFragment() {
             val taxBaseField = binding.EditTextTaxBase as EditText
             val taxBase = taxBaseField.text.toString()
 
+            val icoField = binding.EditTextIco as EditText
+            val ico = icoField.text.toString()
+
             val phoneField = binding.EditTextPhone as EditText
             val phone = phoneField.text.toString()
 
@@ -153,6 +156,7 @@ class CreatePse : PrincipalFragment() {
             pse.value = value
             pse.tax = tax
             pse.taxBase = taxBase
+            pse.ico = ico
             pse.phone = phone
             pse.currency = currency
             pse.country = country

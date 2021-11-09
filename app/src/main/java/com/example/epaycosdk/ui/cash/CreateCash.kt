@@ -91,6 +91,9 @@ class CreateCash : PrincipalFragment() {
             val taxBaseField = binding.EditTextTaxBase as EditText
             val taxBase = taxBaseField.text.toString()
 
+            val icoField = binding.EditTextIco as EditText
+            val ico = icoField.text.toString()
+
             val phoneField = binding.EditTextPhone as EditText
             val phone = phoneField.text.toString()
 
@@ -156,6 +159,7 @@ class CreateCash : PrincipalFragment() {
             cash.value = value
             cash.tax = tax
             cash.taxBase = taxBase
+            cash.ico = ico
             cash.phone = phone
             cash.currency = currency
             cash.ip = ip

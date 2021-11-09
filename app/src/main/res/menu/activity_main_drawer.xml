@@ -41,6 +41,10 @@
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/plans_detail" />
         <item
+            android:id="@+id/plans_delete"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/plans_delete" />
+        <item
             android:id="@+id/plans_list"
             android:icon="@drawable/ic_menu_gallery"
             android:title="@string/plans_list" />

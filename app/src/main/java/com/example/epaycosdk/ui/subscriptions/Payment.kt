@@ -90,6 +90,9 @@ class Payment : PrincipalFragment() {
             val taxBaseField = binding.EditTextTaxBase as EditText
             val taxBase = taxBaseField.text.toString()
 
+            val icoField = binding.EditTextIco as EditText
+            val ico = icoField.text.toString()
+
             val duesField = binding.EditTextDues as EditText
             val dues = duesField.text.toString()
 
@@ -159,6 +162,7 @@ class Payment : PrincipalFragment() {
             charge.value = value
             charge.tax = tax
             charge.taxBase = taxBase
+            charge.ico = ico
             charge.currency = currency
             charge.dues = dues
             charge.ip = ip

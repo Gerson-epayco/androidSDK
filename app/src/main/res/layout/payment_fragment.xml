@@ -133,13 +133,23 @@
                     tools:layout_editor_absoluteX="1dp" />
 
                 <EditText
+                    android:id="@+id/EditTextIco"
+                    android:layout_width="409dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="@string/ico"
+                    android:inputType="textPersonName"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextTaxBase"
+                    tools:layout_editor_absoluteX="1dp" />
+
+                <EditText
                     android:id="@+id/EditTextDues"
                     android:layout_width="409dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="60dp"
                     android:hint="@string/dues"
                     android:inputType="textPersonName"
-                    app:layout_constraintTop_toTopOf="@+id/EditTextTaxBase"
+                    app:layout_constraintTop_toTopOf="@+id/EditTextIco"
                     tools:layout_editor_absoluteX="1dp" />
 
                 <EditText

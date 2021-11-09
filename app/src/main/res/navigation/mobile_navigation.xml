@@ -51,6 +51,11 @@
         android:label="@string/plans_create"
         tools:layout="@layout/plan_detail_fragment" />
     <fragment
+        android:id="@+id/plans_delete"
+        android:name="com.example.epaycosdk.ui.plans.DeletePlan"
+        android:label="@string/plans_delete"
+        tools:layout="@layout/delete_plan_fragment" />
+    <fragment
         android:id="@+id/plans_list"
         android:name="com.example.epaycosdk.ui.PlanListFragment"
         android:label="@string/plans_list"
