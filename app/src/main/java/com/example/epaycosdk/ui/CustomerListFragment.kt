@@ -46,19 +46,19 @@ class CustomerListFragment : PrincipalFragment() {
         val epayco = Epayco(auth)
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        val textViewBank: TextView =  binding.textHome
         epayco.getCustomerList(object : EpaycoCallback {
             @Throws(JSONException::class)
             override fun onSuccess(data: JSONObject) {
                 System.out.println("Result customer: ")
                 System.out.println(data)
-
-                val textViewBank: TextView =  binding.textHome
                 textViewBank.text = data.toString();
             }
 
             override fun onError(error: Exception) {
                 System.out.println("Error")
-                System.out.println("Exception")
+                System.out.println(error)
+                textViewBank.text = error.toString();
             }
         })
         val textView: TextView = binding.textHome

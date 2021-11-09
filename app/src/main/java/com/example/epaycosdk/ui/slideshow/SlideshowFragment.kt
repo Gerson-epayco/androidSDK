@@ -58,6 +58,8 @@ class SlideshowFragment : PrincipalFragment() {
         btn_submit.setOnClickListener {
 
             System.out.println("click")
+            val textView: TextView = binding.result
+            textView.text = "cargando..."
             val numberField = binding.EditTextNumber as EditText
             val number = numberField.text.toString()
 
@@ -79,7 +81,6 @@ class SlideshowFragment : PrincipalFragment() {
                 @Throws(JSONException::class)
                 override fun onSuccess(data: JSONObject) {
 
-                    val textView: TextView = binding.result
                     textView.text = data.toString()
 
                     System.out.println("onSuccess")

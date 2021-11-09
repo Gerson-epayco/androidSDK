@@ -5,71 +5,79 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
-
-    <EditText
-        android:id="@+id/EditTextNumber"
-        android:layout_width="409dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:hint="@string/number"
-        android:inputType="textPersonName"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="1dp" />
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/EditTextNumber"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:hint="@string/number"
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="1dp" />
 
-    <EditText
-        android:id="@+id/EditTextMonth"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:hint="@string/month"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextNumber"
-        tools:layout_editor_absoluteX="1dp"/>
+        <EditText
+            android:id="@+id/EditTextMonth"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/month"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextNumber"
+            tools:layout_editor_absoluteX="1dp"/>
 
-    <EditText
-        android:id="@+id/EditTextYear"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="@string/year"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextMonth"
-        tools:layout_editor_absoluteX="1dp"/>
+        <EditText
+            android:id="@+id/EditTextYear"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/year"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextMonth"
+            tools:layout_editor_absoluteX="1dp"/>
 
-    <EditText
-        android:id="@+id/EditTextCVC"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="@string/cvc"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextYear"
-        tools:layout_editor_absoluteX="0dp"/>
+        <EditText
+            android:id="@+id/EditTextCVC"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="@string/cvc"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextYear"
+            tools:layout_editor_absoluteX="0dp"/>
 
-    <Button
-        android:id="@+id/ButtonSendFeedback"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="sendFeedback"
-        android:text="@string/enviar"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextCVC"
-        tools:layout_editor_absoluteX="8dp"/>
+        <Button
+            android:id="@+id/ButtonSendFeedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="sendFeedback"
+            android:text="@string/enviar"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextCVC"
+            tools:layout_editor_absoluteX="8dp"/>
 
-    <TextView
-        android:id="@+id/result"
-        android:layout_width="388dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="134dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ButtonSendFeedback"
-        app:layout_constraintVertical_bias="0.0" />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="397dp"
+            android:layout_height="356dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ButtonSendFeedback"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
