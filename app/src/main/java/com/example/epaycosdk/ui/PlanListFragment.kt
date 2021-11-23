@@ -50,19 +50,20 @@ class PlanListFragment : PrincipalFragment() {
         val root: View = binding.root
 
         val epayco = Epayco(auth)
-
+        val textViewBank: TextView = binding.textHome
         epayco.getPlanList(object : EpaycoCallback {
             @Throws(JSONException::class)
             override fun onSuccess(data: JSONObject) {
                 System.out.println("Result: ")
                 System.out.println(data)
-                val textViewBank: TextView = binding.textHome
+
                 textViewBank.text = data.toString();
             }
 
             override fun onError(error: Exception) {
                 System.out.println("Error")
-                System.out.println("Exception")
+                System.out.println(error)
+                textViewBank.text = error.toString()
             }
         })
 
