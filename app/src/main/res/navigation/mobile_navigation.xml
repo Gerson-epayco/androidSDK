@@ -115,4 +115,16 @@
         android:name="com.example.epaycosdk.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/daviplata_create"
+        android:name="com.example.epaycosdk.ui.daviplata.DaviplataFragment"
+        android:label="@string/daviplata"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/safetypay"
+        android:name="com.example.epaycosdk.ui.safetypay.SafetypayFragment"
+        android:label="@string/safetypay"
+        tools:layout="@layout/fragment_slideshow" />
 </navigation>

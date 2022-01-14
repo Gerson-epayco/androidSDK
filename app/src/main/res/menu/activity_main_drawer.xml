@@ -93,5 +93,19 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/daviplata_create"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/daviplata" />
+
+        <item
+            android:id="@+id/daviplata_confirm"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/daviplata_confirm" />
+
+        <item
+            android:id="@+id/safetypay"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/safetypay" />
     </group>
 </menu>

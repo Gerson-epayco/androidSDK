@@ -168,4 +168,13 @@
     <string name="dues">dues</string>
     <string name="ico">ico</string>
     <string name="plans_delete">Delete Plan</string>
+    <string name="document">Document</string>
+    <string name="indCountry">ind country</string>
+    <string name="methodConfirmation">Method Confirmation</string>
+    <string name="idSessionToken">Is Session Token</string>
+    <string name="otp">OTP</string>
+    <string name="daviplata">Create TRX Daviplata</string>
+    <string name="daviplata_confirm">ConfirmTRX daviplata</string>
+    <string name="safetypay">Create TRX Safetypay</string>
+    <string name="urlResponsePointer">URL response pointer</string>
 </resources>
