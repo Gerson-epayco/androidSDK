@@ -54,28 +54,28 @@ class CreatePlan : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val idPlanField = binding.EditTextIdPlan as EditText
+            val idPlanField = binding.EditTextIdPlan 
             val idPlan = idPlanField.text.toString()
 
-            val nameField = binding.EditTextName as EditText
+            val nameField = binding.EditTextName 
             val name = nameField.text.toString()
 
-            val descriptionField = binding.EditTextDescription as EditText
+            val descriptionField = binding.EditTextDescription 
             val description = descriptionField.text.toString()
 
-            val amountField = binding.EditTextAmount as EditText
+            val amountField = binding.EditTextAmount 
             val amount = amountField.text.toString()
 
-            val currencyField = binding.EditTextCurrency as EditText
+            val currencyField = binding.EditTextCurrency 
             val currency = currencyField.text.toString()
 
-            val intervalField = binding.EditTextInterval as EditText
+            val intervalField = binding.EditTextInterval 
             val interval = intervalField.text.toString()
 
-            val intervalCountField = binding.EditTextIntervalCount as EditText
+            val intervalCountField = binding.EditTextIntervalCount 
             val intervalCount = intervalCountField.text.toString()
 
-            val trialDaysField = binding.EditTextTrialDays as EditText
+            val trialDaysField = binding.EditTextTrialDays 
             val trialDays = trialDaysField.text.toString()
 
             plan.idPlan = idPlan

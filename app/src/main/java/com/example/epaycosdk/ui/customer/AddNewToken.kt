@@ -52,10 +52,10 @@ class AddNewToken : PrincipalFragment() {
         btn_submit.setOnClickListener {
 
             System.out.println("click")
-            val customerIdField = binding.EditTextCustomerId as EditText
+            val customerIdField = binding.EditTextCustomerId 
             val customerId = customerIdField.text.toString()
 
-            val tokenIdField = binding.EditTextTokenId as EditText
+            val tokenIdField = binding.EditTextTokenId 
             val tokenID = tokenIdField.text.toString()
 
 

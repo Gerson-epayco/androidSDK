@@ -53,7 +53,7 @@ class DetailPse : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val refPaycoField = binding.EditTextRefPayco as EditText
+            val refPaycoField = binding.EditTextRefPayco 
             val refPayco = refPaycoField.text.toString()
 
             epayco.getPseTransaction(refPayco, object : EpaycoCallback {

@@ -47,7 +47,7 @@ class DeletePlan : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val idPlanField = binding.EditTextIdPlan as EditText
+            val idPlanField = binding.EditTextIdPlan 
             val idPlan = idPlanField.text.toString()
 
             epayco.deletePlan(idPlan, object : EpaycoCallback {

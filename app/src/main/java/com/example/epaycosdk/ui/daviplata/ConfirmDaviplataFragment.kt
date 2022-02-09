@@ -50,13 +50,13 @@ class ConfirmDaviplataFragment : PrincipalFragment() {
         btn_submit.setOnClickListener {
 
 
-            val refPaycoField = binding.EditTextRefPayco as EditText
+            val refPaycoField = binding.EditTextRefPayco 
             val refPayco = refPaycoField.text.toString()
 
-            val idSessionTokenField = binding.EditTextIdSessionToken as EditText
+            val idSessionTokenField = binding.EditTextIdSessionToken 
             val idSessionToken = idSessionTokenField.text.toString()
 
-            val otpField = binding.EditTextOtp as EditText
+            val otpField = binding.EditTextOtp 
             val otp = otpField.text.toString()
 
 

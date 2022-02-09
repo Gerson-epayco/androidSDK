@@ -60,16 +60,16 @@ class SlideshowFragment : PrincipalFragment() {
             System.out.println("click")
             val textView: TextView = binding.result
             textView.text = "cargando..."
-            val numberField = binding.EditTextNumber as EditText
+            val numberField = binding.EditTextNumber 
             val number = numberField.text.toString()
 
-            val monthField = binding.EditTextMonth as EditText
+            val monthField = binding.EditTextMonth 
             val month = monthField.text.toString()
 
-            val yearField = binding.EditTextYear as EditText
+            val yearField = binding.EditTextYear 
             val year = yearField.text.toString()
 
-            val cvcField = binding.EditTextCVC as EditText
+            val cvcField = binding.EditTextCVC 
             val cvc = cvcField.text.toString()
 
             card.setNumber(number)

@@ -53,22 +53,22 @@ class CreateSubscription : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val tokenIDField = binding.EditTextTokenId as EditText
+            val tokenIDField = binding.EditTextTokenId 
             val tokenID = tokenIDField.text.toString()
 
-            val customerIDField = binding.EditTextCustomerId as EditText
+            val customerIDField = binding.EditTextCustomerId 
             val customerID = customerIDField.text.toString()
 
-            val idPlanField = binding.EditTextIdPlan as EditText
+            val idPlanField = binding.EditTextIdPlan 
             val idPlan = idPlanField.text.toString()
 
-            val docTypeField = binding.EditTextDocType as EditText
+            val docTypeField = binding.EditTextDocType 
             val docType = docTypeField.text.toString()
 
-            val docNumberField = binding.EditTextDocNumber as EditText
+            val docNumberField = binding.EditTextDocNumber 
             val docNumber = docNumberField.text.toString()
 
-            val urlConfirmationField = binding.EditTextUrlConfirmation as EditText
+            val urlConfirmationField = binding.EditTextUrlConfirmation 
             val urlConfirmation = urlConfirmationField.text.toString()
 
             subscription.setTokenCard(tokenID)

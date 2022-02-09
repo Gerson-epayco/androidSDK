@@ -50,7 +50,7 @@ class PlanDetail : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val idPlanField = binding.EditTextIdPlan as EditText
+            val idPlanField = binding.EditTextIdPlan 
             val idPlan = idPlanField.text.toString()
 
             epayco.getPlan(idPlan, object : EpaycoCallback {

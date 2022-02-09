@@ -53,7 +53,7 @@ class CustomerDetailFragment : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val idField = binding.EditTextCustomerId as EditText
+            val idField = binding.EditTextCustomerId 
             val id = idField.text.toString()
 
 

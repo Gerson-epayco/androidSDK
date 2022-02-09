@@ -65,19 +65,19 @@ class CreateCustomerFragment : PrincipalFragment() {
         btn_submit.setOnClickListener {
 
             System.out.println("click")
-            val tokenIdField = binding.EditTextTokenId as EditText
+            val tokenIdField = binding.EditTextTokenId 
             val tokenId = tokenIdField.text.toString()
 
-            val nameField = binding.EditTextName as EditText
+            val nameField = binding.EditTextName 
             val name = nameField.text.toString()
 
-            val emailField = binding.EditTextEmail as EditText
+            val emailField = binding.EditTextEmail 
             val email = emailField.text.toString()
 
-            val phoneField = binding.EditTextPhone as EditText
+            val phoneField = binding.EditTextPhone 
             val phone = phoneField.text.toString()
 
-            val defaultCardField = binding.EditTextDefault as EditText
+            val defaultCardField = binding.EditTextDefault 
             val defaultCard = defaultCardField.text.toString()
 
             client.setTokenId(tokenId)

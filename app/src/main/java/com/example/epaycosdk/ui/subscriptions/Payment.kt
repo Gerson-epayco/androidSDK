@@ -51,100 +51,100 @@ class Payment : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val tokenCardField = binding.EditTextTokenId as EditText
+            val tokenCardField = binding.EditTextTokenId 
             val tokenCard = tokenCardField.text.toString()
 
-            val customerIdField = binding.EditTextCustomerId as EditText
+            val customerIdField = binding.EditTextCustomerId 
             val customerId = customerIdField.text.toString()
 
-            val docTypeField = binding.EditTextDocType as EditText
+            val docTypeField = binding.EditTextDocType 
             val docType = docTypeField.text.toString()
 
-            val docNumberField = binding.EditTextDocNumber as EditText
+            val docNumberField = binding.EditTextDocNumber 
             val docNumber = docNumberField.text.toString()
 
-            val ipField = binding.EditTextIP as EditText
+            val ipField = binding.EditTextIP 
             val ip = ipField.text.toString()
 
-            val nameField = binding.EditTextName as EditText
+            val nameField = binding.EditTextName 
             val name = nameField.text.toString()
 
-            val lastNameField = binding.EditTextLastName as EditText
+            val lastNameField = binding.EditTextLastName 
             val lastName = lastNameField.text.toString()
 
-            val emailField = binding.EditTextEmail as EditText
+            val emailField = binding.EditTextEmail 
             val email = emailField.text.toString()
 
-            val invoiceField = binding.EditTextInvoice as EditText
+            val invoiceField = binding.EditTextInvoice 
             val invoice = invoiceField.text.toString()
 
-            val descriptionField = binding.EditTextDescription as EditText
+            val descriptionField = binding.EditTextDescription 
             val description = descriptionField.text.toString()
 
-            val valueField = binding.EditTextValue as EditText
+            val valueField = binding.EditTextValue 
             val value = valueField.text.toString()
 
-            val taxField = binding.EditTextTax as EditText
+            val taxField = binding.EditTextTax 
             val tax = taxField.text.toString()
 
-            val taxBaseField = binding.EditTextTaxBase as EditText
+            val taxBaseField = binding.EditTextTaxBase 
             val taxBase = taxBaseField.text.toString()
 
-            val icoField = binding.EditTextIco as EditText
+            val icoField = binding.EditTextIco 
             val ico = icoField.text.toString()
 
-            val duesField = binding.EditTextDues as EditText
+            val duesField = binding.EditTextDues 
             val dues = duesField.text.toString()
 
-            val DefaultCardField = binding.EditTextDefaultCard as EditText
+            val DefaultCardField = binding.EditTextDefaultCard 
             val use_default_card_customer = DefaultCardField.text.toString()
 
-            val currencyField = binding.EditTextCurrency as EditText
+            val currencyField = binding.EditTextCurrency 
             val currency = currencyField.text.toString()
 
-            val countryField = binding.EditTextCountry as EditText
+            val countryField = binding.EditTextCountry 
             val country = countryField.text.toString()
 
-            val urlResponseField = binding.EditTextUrlResponse as EditText
+            val urlResponseField = binding.EditTextUrlResponse 
             val urlResponse = urlResponseField.text.toString()
 
-            val urlConfirmationField = binding.EditTextUrlConfirmation as EditText
+            val urlConfirmationField = binding.EditTextUrlConfirmation 
             val urlConfirmation = urlConfirmationField.text.toString()
 
-            val extra1Field = binding.EditTextExtra1 as EditText
+            val extra1Field = binding.EditTextExtra1 
             val extra1 = extra1Field.text.toString()
 
-            val extra2Field = binding.EditTextExtra1 as EditText
+            val extra2Field = binding.EditTextExtra1 
             val extra2 = extra2Field.text.toString()
 
-            val extra3Field = binding.EditTextExtra3 as EditText
+            val extra3Field = binding.EditTextExtra3 
             val extra3 = extra3Field.text.toString()
 
-            val cityField = binding.EditTextCity as EditText
+            val cityField = binding.EditTextCity 
             val city = cityField.text.toString()
 
-            val deptoField = binding.EditTextDepto as EditText
+            val deptoField = binding.EditTextDepto 
             val depto = deptoField.text.toString()
 
-            val addressField = binding.EditTextAddress as EditText
+            val addressField = binding.EditTextAddress 
             val address = addressField.text.toString()
 
-            val splitpaymentField = binding.EditTextSplitpayment as EditText
+            val splitpaymentField = binding.EditTextSplitpayment 
             val splitpayment = splitpaymentField.text.toString()
 
-            val split_app_idField = binding.EditTextAddressSplitAppId as EditText
+            val split_app_idField = binding.EditTextAddressSplitAppId 
             val split_app_id = split_app_idField.text.toString()
 
-            val split_merchant_idField = binding.EditTextSplitMerchantId as EditText
+            val split_merchant_idField = binding.EditTextSplitMerchantId 
             val split_merchant_id = split_merchant_idField.text.toString()
 
-            val split_typeField = binding.EditTextSplitType as EditText
+            val split_typeField = binding.EditTextSplitType 
             val split_type = split_typeField.text.toString()
 
-            val split_primary_receiversField = binding.EditTextSplitPrimaryReceiver as EditText
+            val split_primary_receiversField = binding.EditTextSplitPrimaryReceiver 
             val split_primary_receiver = split_primary_receiversField.text.toString()
 
-            val split_primary_receiver_feeField = binding.EditTextSplitPrimaryReceiverFee as EditText
+            val split_primary_receiver_feeField = binding.EditTextSplitPrimaryReceiverFee 
             val split_primary_receiver_fee = split_primary_receiver_feeField.text.toString()
 
             val charge = Charge()

@@ -54,16 +54,16 @@ class AddNewDefaultTokenkFragment : PrincipalFragment() {
         btn_submit.setOnClickListener {
 
             System.out.println("click")
-            val customerIdField = binding.EditTextCustomerId as EditText
+            val customerIdField = binding.EditTextCustomerId 
             val customerId = customerIdField.text.toString()
 
-            val tokenIdField = binding.EditTextTokenId as EditText
+            val tokenIdField = binding.EditTextTokenId 
             val tokenID = tokenIdField.text.toString()
 
-            val franchiseField = binding.EditTextFranchise as EditText
+            val franchiseField = binding.EditTextFranchise 
             val franchise = franchiseField.text.toString()
 
-            val maskField = binding.EditTextMask as EditText
+            val maskField = binding.EditTextMask 
             val mask = maskField.text.toString()
 
             client.setCustomer_id(customerId)

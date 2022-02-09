@@ -51,7 +51,7 @@ class DetailSubscription : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val subIDField = binding.EditTextSubID as EditText
+            val subIDField = binding.EditTextSubID 
             val subID = subIDField.text.toString()
 
             epayco.getSubscription(subID, object : EpaycoCallback {

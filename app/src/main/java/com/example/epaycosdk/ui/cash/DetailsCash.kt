@@ -49,7 +49,7 @@ class DetailsCash : PrincipalFragment() {
 
         btn_submit.setOnClickListener {
 
-            val refPaycoField = binding.EditTextRefPayco as EditText
+            val refPaycoField = binding.EditTextRefPayco 
             val refPayco = refPaycoField.text.toString()
 
             epayco.getReferencePayment(refPayco, object : EpaycoCallback {

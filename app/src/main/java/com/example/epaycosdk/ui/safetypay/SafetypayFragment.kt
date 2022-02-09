@@ -49,77 +49,77 @@ class SafetypayFragment : PrincipalFragment() {
         btn_submit.setOnClickListener {
 
 
-            val cashField = binding.EditTextCash as EditText
+            val cashField = binding.EditTextCash 
             val cash = cashField.text.toString()
 
-            val endDateField = binding.EditTextEndDate as EditText
+            val endDateField = binding.EditTextEndDate 
             val endDate = endDateField.text.toString()
 
 
-            val docTypeField = binding.EditTextDocType as EditText
+            val docTypeField = binding.EditTextDocType 
             val docType = docTypeField.text.toString()
 
-            val documentField = binding.EditTextDocument as EditText
+            val documentField = binding.EditTextDocument 
             val document = documentField.text.toString()
 
-            val ipField = binding.EditTextIP as EditText
+            val ipField = binding.EditTextIP 
             val ip = ipField.text.toString()
 
-            val nameField = binding.EditTextName as EditText
+            val nameField = binding.EditTextName 
             val name = nameField.text.toString()
 
-            val lastNameField = binding.EditTextLastName as EditText
+            val lastNameField = binding.EditTextLastName 
             val lastName = lastNameField.text.toString()
 
-            val emailField = binding.EditTextEmail as EditText
+            val emailField = binding.EditTextEmail 
             val email = emailField.text.toString()
 
-            val invoiceField = binding.EditTextInvoice as EditText
+            val invoiceField = binding.EditTextInvoice 
             val invoice = invoiceField.text.toString()
 
-            val descriptionField = binding.EditTextDescription as EditText
+            val descriptionField = binding.EditTextDescription 
             val description = descriptionField.text.toString()
 
-            val valueField = binding.EditTextValue as EditText
+            val valueField = binding.EditTextValue 
             val value = valueField.text.toString()
 
-            val taxField = binding.EditTextTax as EditText
+            val taxField = binding.EditTextTax 
             val tax = taxField.text.toString()
 
-            val taxBaseField = binding.EditTextTaxBase as EditText
+            val taxBaseField = binding.EditTextTaxBase 
             val taxBase = taxBaseField.text.toString()
 
-            val icoField = binding.EditTextIco as EditText
+            val icoField = binding.EditTextIco 
             val ico = icoField.text.toString()
 
-            val phoneField = binding.EditTextPhone as EditText
+            val phoneField = binding.EditTextPhone 
             val phone = phoneField.text.toString()
 
-            val currencyField = binding.EditTextCurrency as EditText
+            val currencyField = binding.EditTextCurrency 
             val currency = currencyField.text.toString()
 
-            val countryField = binding.EditTextCountry as EditText
+            val countryField = binding.EditTextCountry 
             val country = countryField.text.toString()
 
-            val urlResponseField = binding.EditTextUrlResponse as EditText
+            val urlResponseField = binding.EditTextUrlResponse 
             val urlResponse = urlResponseField.text.toString()
 
-            val urlResponseFieldPointer = binding.EditTextUrlResponsePointer as EditText
+            val urlResponseFieldPointer = binding.EditTextUrlResponsePointer 
             val urlResponsePointer = urlResponseFieldPointer.text.toString()
 
-            val urlConfirmationField = binding.EditTextUrlConfirmation as EditText
+            val urlConfirmationField = binding.EditTextUrlConfirmation 
             val urlConfirmation = urlConfirmationField.text.toString()
 
-            val methodConfirmationField = binding.EditTextMethodConfirmation as EditText
+            val methodConfirmationField = binding.EditTextMethodConfirmation 
             val methodConfirmation = methodConfirmationField.text.toString()
 
-            val indCountryField = binding.EditTextIndCountry as EditText
+            val indCountryField = binding.EditTextIndCountry 
             val indCountry = indCountryField.text.toString()
 
-            val cityField = binding.EditTextCity as EditText
+            val cityField = binding.EditTextCity 
             val city = cityField.text.toString()
 
-            val addressField = binding.EditTextAddress as EditText
+            val addressField = binding.EditTextAddress 
             val address = addressField.text.toString()
 
 
@@ -157,13 +157,17 @@ class SafetypayFragment : PrincipalFragment() {
                 override fun onSuccess(data: JSONObject) {
 
                     val textView: TextView = binding.result
-                    textView.text = data.toString()
+                    textView.text = data.toString();
 
                     System.out.println("onSuccess")
 
                 }
 
-                override fun onError(error: Exception) {}
+                override fun onError(error: Exception) {
+                    println(error);
+                    System.out.println("error")
+                    textView.text = error.toString();
+                }
             })
         }
 
