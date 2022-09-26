@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 
 class ConfirmDaviplataViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
-        value = "Cargando"
+        value = "Bienvenido"
     }
     val text: LiveData<String> = _text
 }

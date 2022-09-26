@@ -121,6 +121,11 @@
         android:name="com.example.epaycosdk.ui.daviplata.DaviplataFragment"
         android:label="@string/daviplata"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/daviplata_confirm"
+        android:name="com.example.epaycosdk.ui.daviplata.ConfirmDaviplataFragment"
+        android:label="@string/daviplata_confirm"
+        tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/safetypay"

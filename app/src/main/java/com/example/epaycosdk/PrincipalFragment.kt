@@ -31,8 +31,8 @@ open class PrincipalFragment : Fragment() {
 
         // auth = Authentication()
 
-        auth.setApiKey("32e4e653daf732e428560c3b76743a85")
-        auth.setPrivateKey("0950b3575b9607f22e7851db37699a8b")
+        auth.setApiKey("b7f8bfa73882ec2f2340c1066b704a1a")
+        auth.setPrivateKey("1991dbc702000093ea2ed645b98ff204")
         auth.setLang("ES")
         auth.setTest(true)
     }

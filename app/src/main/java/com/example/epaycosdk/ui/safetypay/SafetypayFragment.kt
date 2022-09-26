@@ -151,15 +151,16 @@ class SafetypayFragment : PrincipalFragment() {
             safetypay.address = address
             safetypay.typeIntegration = "Android"
 
-
-            epayco.createSafetypay(safetypay, object : EpaycoCallback {
+            textView.text = "Conectando con epayco..."
+                epayco.createSafetypay(safetypay, object : EpaycoCallback {
                 @Throws(JSONException::class)
                 override fun onSuccess(data: JSONObject) {
 
-                    val textView: TextView = binding.result
+
                     textView.text = data.toString();
 
                     System.out.println("onSuccess")
+                    System.out.println( data.toString())
 
                 }
 

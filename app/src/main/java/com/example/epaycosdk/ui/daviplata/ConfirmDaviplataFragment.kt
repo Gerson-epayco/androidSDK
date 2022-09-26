@@ -66,12 +66,10 @@ class ConfirmDaviplataFragment : PrincipalFragment() {
             daviplata.idSessionToken = idSessionToken
             daviplata.otp = otp
 
-
+            textView.text = "Conectando con epayco.."
             epayco.confirmDaviplata(daviplata, object : EpaycoCallback {
                 @Throws(JSONException::class)
                 override fun onSuccess(data: JSONObject) {
-
-                    val textView: TextView = binding.result
                     textView.text = data.toString()
 
                     System.out.println("onSuccess")

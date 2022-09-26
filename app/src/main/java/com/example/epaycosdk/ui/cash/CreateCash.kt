@@ -109,6 +109,9 @@ class CreateCash : PrincipalFragment() {
             val urlConfirmationField = binding.EditTextUrlConfirmation 
             val urlConfirmation = urlConfirmationField.text.toString()
 
+            val methodConfirmationField = binding.EditTextMethodConfirmation
+            val methodConfirmation = methodConfirmationField.text.toString()
+
             val extra1Field = binding.EditTextExtra1 
             val extra1 = extra1Field.text.toString()
 
@@ -165,6 +168,7 @@ class CreateCash : PrincipalFragment() {
             cash.ip = ip
             cash.urlResponse = urlResponse
             cash.urlConfirmation = urlConfirmation
+            cash.methodConfirmation = methodConfirmation
             cash.extra1 = extra1
             cash.extra2 = extra2
             cash.extra3 = extra3
@@ -179,7 +183,7 @@ class CreateCash : PrincipalFragment() {
             cash.split_primary_receiver=  split_primary_receiver
             cash.split_primary_receiver_fee = split_primary_receiver_fee
 
-
+            textView.text = "Conectando con epayco"
             epayco.createCashTransaction(cash, object : EpaycoCallback {
                 @Throws(JSONException::class)
                 override fun onSuccess(data: JSONObject) {
@@ -188,10 +192,15 @@ class CreateCash : PrincipalFragment() {
                     textView.text = data.toString()
 
                     System.out.println("onSuccess")
+                    System.out.println(data.toString())
 
                 }
 
-                override fun onError(error: Exception) {}
+                override fun onError(error: Exception) {
+                    textView.text = error.toString()
+                    System.out.println("onError")
+                    System.out.println(error.toString())
+                }
             })
         }
 

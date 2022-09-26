@@ -37,7 +37,6 @@ class DaviplataFragment : PrincipalFragment() {
 
         _binding = DaviplataFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
         val textView: TextView = binding.result
         viewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
@@ -84,7 +83,7 @@ class DaviplataFragment : PrincipalFragment() {
             val icoField = binding.EditTextIco 
             val ico = icoField.text.toString()
 
-            val phoneField = binding.EditTextPhone 
+            val phoneField = binding.EditTextPhone
             val phone = phoneField.text.toString()
 
             val currencyField = binding.EditTextCurrency 
@@ -125,7 +124,7 @@ class DaviplataFragment : PrincipalFragment() {
             daviplata.tax = tax.toFloat()
             daviplata.taxBase = taxBase.toFloat()
             daviplata.ico = ico.toFloat()
-            daviplata.phone = phone.toInt()
+            daviplata.phone = phone
             daviplata.currency = currency
             daviplata.ip = ip
             daviplata.urlResponse = urlResponse
@@ -136,19 +135,23 @@ class DaviplataFragment : PrincipalFragment() {
             daviplata.city = city
             daviplata.address = address
 
-
+            textView.text = "Conectando con epayco..."
             epayco.createDaviplata(daviplata, object : EpaycoCallback {
                 @Throws(JSONException::class)
                 override fun onSuccess(data: JSONObject) {
 
-                    val textView: TextView = binding.result
+
                     textView.text = data.toString()
 
                     System.out.println("onSuccess")
 
                 }
 
-                override fun onError(error: Exception) {}
+                override fun onError(error: Exception) {
+                    System.out.println(("estoy en el onError de daviplata"))
+                    System.out.println(error)
+                    textView.text = error.toString()
+                }
             })
         }
 

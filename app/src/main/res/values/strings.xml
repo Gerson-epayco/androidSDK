@@ -177,4 +177,5 @@
     <string name="daviplata_confirm">ConfirmTRX daviplata</string>
     <string name="safetypay">Create TRX Safetypay</string>
     <string name="urlResponsePointer">URL response pointer</string>
+    <string name="methodConfirmationConfirmation">Method Confirmation</string>
 </resources>
